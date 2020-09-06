@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Jua:400');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400');
 
 * { 
     padding: 0;
@@ -6,7 +7,7 @@
 }
 
 html, body { 
-    font-family: Jua, sans-serif;
+    font-family: Nanum Gothic Coding, sans-serif;
     background-color: #FFFFFF;
     color: #FFFFFF;
     height: 100%;
@@ -16,19 +17,59 @@ html, body {
     display: grid;
     grid-template-columns: 350px auto 250px;
     height: 100%;
+    z-index:1;
 }
 
 #left-bar { 
     grid-column-start: 1;
-    background-color: #2e2e2e;
+    grid-column-end: 1;
+    grid-row: 1 / span 3;
+    background-color: #242424;
+    z-index: 1;
 }
 
 #main-box {
     grid-column-start: 2;
-    background-color: #FFFFFF;
+    grid-column-end: 2;
+    grid-row: 1 / span 3;
+    background-color: #ffffff;
+    z-index: 1;
 }
 
 #right-bar { 
     grid-column-start: 3;
-    background-color: #F0F0F0;
+    grid-column-end: 3;
+    grid-row: 1 / span 3;
+    background-color: #f0f0f0;
+    z-index: 1;
+}
+
+#profile-pic {
+    margin-left: -150px;
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    border: 5px solid #8d8d8d;
+    z-index: 2;
+}
+
+#profile-pic img { 
+    height: 100%;
+    width: 100%; 
+}
+
+#left-bar h4 { 
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 10pt;
+}
+
+#left-bar h5 {
+    position: absolute;
+    margin-left: -50px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    transform: rotate(-90deg);
 }
