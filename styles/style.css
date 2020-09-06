@@ -73,3 +73,7 @@ html, body {
     transform: translate(0%, -50%);
     transform: rotate(-90deg);
 }
+
+#main-box h1 {
+    color: #000000;
+}
